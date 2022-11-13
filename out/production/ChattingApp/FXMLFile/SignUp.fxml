@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.text.Font?>
+
+<StackPane fx:id="pc" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="720.0" prefWidth="813.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="FXMLFile.SignUpController">
+   <children>
+      <AnchorPane id="AnchorPane" prefHeight="720.0" prefWidth="813.0" style="-fx-background-color: #1E90FF;">
+         <children>
+            <Label layoutX="142.0" layoutY="123.0" prefHeight="36.0" prefWidth="110.0" text="SIGN UP" textFill="#362f2f">
+               <font>
+                  <Font name="Algerian" size="29.0" />
+               </font>
+            </Label>
+            <Label layoutX="142.0" layoutY="159.0" prefHeight="21.0" prefWidth="277.0" text="Plesae fill up the form to create account" textFill="WHITE" />
+            <TextField fx:id="userID" layoutX="142.0" layoutY="210.0" onAction="#userIdcontroller" prefHeight="46.0" prefWidth="253.0" promptText="User ID" />
+            <PasswordField fx:id="pass" layoutX="140.0" layoutY="274.0" onAction="#passController" prefHeight="46.0" prefWidth="253.0" promptText="Password" />
+            <PasswordField fx:id="confirmpass" layoutX="140.0" layoutY="334.0" onAction="#confirmPassController" prefHeight="46.0" prefWidth="253.0" promptText="Confirm Password" />
+           
+            <ImageView fx:id="setImage" fitHeight="150.0" fitWidth="200.0" layoutX="423.0" layoutY="210.0" nodeOrientation="INHERIT" pickOnBounds="true" preserveRatio="true" smooth="false" />
+            <JFXButton layoutX="168.0" layoutY="401.0" onAction="#setImageAction" prefHeight="36.0" prefWidth="189.0" text="Set Profile Picture" />
+            <JFXButton fx:id="signUp" layoutX="189.0" layoutY="465.0" onAction="#singUpAction" prefHeight="31.0" prefWidth="135.0" text="Sign Up" />
+            <JFXButton fx:id="backButton" layoutX="454.0" layoutY="548.0" onAction="#backButtonAction" prefHeight="36.0" prefWidth="189.0" text="Let's back to log in" textFill="#e80d0d" />
+         </children>
+      </AnchorPane>
+   </children>
+</StackPane>
